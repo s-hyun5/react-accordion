@@ -1,0 +1,12 @@
+{
+	"plugins": ["react", "react-hooks"],
+	"rules": {
+		"no-unused-vars": "warn",
+		// Hooks
+		"react-hooks/rules-of-hooks": "error",
+		"react-hooks/exhaustive-deps": "off",
+		// React
+		"react/react-in-jsx-scope": "error",
+		"react/no-unsafe": "error"
+	}
+}

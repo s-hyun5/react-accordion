@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "~/index.scss"
+import MultiAccordion from "~/component/MultiAccordion";
+import Default from "~/component/SingleAccordion/Default";
+import Collapsible from "~/component/SingleAccordion/Collapsible";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='container'>
+        <h1>React Accordion</h1>
+          <Default/>
+          <Collapsible/>
+          <MultiAccordion />
+      </div>
   );
-}
+};
 
 export default App;
